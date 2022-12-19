@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* { margin: 0px; border: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif;}
+
+body { background-color: rgb(5, 97, 89);}
+
+.sistema {
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    text-align: center; }
+
+h1 { padding: 20px 0px 20px 0px;}
+
+.peso, .altura {
+    height: 20px;
+    width: 100px;
+    
+    padding: 2px 0px 2px 5px;
+    margin-left: 10px;
+    border: black 1px solid; }
+
+.peso:hover, .altura:hover { background-color: rgb(30, 202, 165); }
+    
+.altura { margin: 8px 0px 5px 0px;}
+
+button { 
+    background-color: rgb(9, 141, 112);
+    height: 30px; 
+    width: 160px;
+    margin: 10px;
+    color: white;
+    }
+
+button:hover { 
+    background-color: rgb(6, 85, 68);
+    border: rgb(255, 255, 255) 2px solid;}  
+
+.paragResultado {
+    background-color: rgb(4, 124, 68);
+    padding: 10px 20px;
+    border-radius: 0px 0px 10px 10px; }
