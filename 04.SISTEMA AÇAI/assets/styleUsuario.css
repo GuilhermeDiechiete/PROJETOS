@@ -1,0 +1,11 @@
+@charset "UTF_8";
+
+* { margin: 0px; padding: 0px; border: 0px;}
+
+.usuario { 
+    background-color: rgb(223, 230, 243);
+    border: white 2px solid;
+    height: 400px;
+    width: 150px;
+    padding: 5px;
+}
