@@ -1,14 +1,22 @@
+// LIGAÇÕES COM O HTML
 const opçãoMesa = document.querySelector('.mesa')
 const opçãoTamanho = document.querySelector('.tamanho')
 const opçãoSabor = document.querySelector('.sabor')
-
 const botaoEnviar = document.querySelector('.enviar')
 const registroDePedidos = document.querySelector('.registroPedidos')
 
-// CAPTURANDO EVENTO DE CLICK NO BOTAO
+
+// CAPTURANDO EVENTO DE CLICK NO BOTAO ENVIAR PEDIDO
 botaoEnviar.addEventListener('click', function(){
-    criarPedido()
-    
+    criarPedido()})
+
+document.addEventListener('click', function(e){
+    const el = e.target
+
+    if(el.classList.contains('apagar')){
+        el.parentElement.remove()
+        
+    }
 })
 
 function criarLi(){
@@ -25,9 +33,9 @@ function criarPedido(){
     
 }
 function concatenarPedido(){
-    const pedido = `Mesa: ${opçãoMesa.value} 
-                    Tamanho: ${opçãoTamanho.value} 
-                    Sabor: ${opçãoSabor.value}`
+    const pedido = `MESA: ${opçãoMesa.value} 
+                    COPO: ${opçãoTamanho.value} 
+                    ADD: ${opçãoSabor.value} `
     return pedido
 }
 
@@ -38,6 +46,14 @@ function criarBotaoApagar(li){
     botaoApagar.setAttribute('class', 'apagar')
     li.appendChild(botaoApagar)
 }
+
+function salvarPedido(){
+    const pedidoSalvo = criarPedido()
+    localStorage.getItem = pedidoSalvo
+    return pedidoSalvo
+}
+
+salvarPedido()
 
 
 

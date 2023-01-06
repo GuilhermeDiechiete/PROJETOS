@@ -1,0 +1,15 @@
+@charset "UTF_8";
+
+.logo {
+    height: 120px;
+    width: 120px;
+    border: white 1px solid;
+}
+
+.btnUsuario {
+    background-color: darkgrey;
+    border: white 1px solid;
+    width: 150px;
+    margin: 2px;
+    padding: 2px;
+}

@@ -1,0 +1,31 @@
+@charset "UTF_8";
+
+.pedidos {
+    background-color: rgb(168, 168, 168);
+}
+
+.item {
+    background-color: blueviolet;
+    margin: 2px 0px 2px 0px;
+    font-size: 12px;
+    width: 130px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    border: white 1px solid;
+}
+
+.apagar {
+    background-color: brown;
+    padding: 5px;
+    color: white;
+    margin: 2px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: white 1px solid;
+
+}
+
+.apagar:hover {
+    transform: scale(105%);
+}
