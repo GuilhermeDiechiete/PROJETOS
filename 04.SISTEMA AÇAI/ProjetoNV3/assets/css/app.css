@@ -1,0 +1,27 @@
+@charset "UTF_8";
+
+* { 
+    margin: 0px; 
+    border: 0px; 
+    padding: 0px;
+}
+
+.app {
+    background-color: dimgray;
+    max-width: 568px;
+    height: 500px;
+    display: flex;
+}
+.usuario, .menu, .pedidos {
+    width: 180px;
+    text-align: center;
+    padding-top: 30px;
+    margin: 7px;
+    border: white 1px solid;
+    color: white;
+    font-family: Georgia;
+}
+
+h3 {
+    margin-bottom: 20px;
+}

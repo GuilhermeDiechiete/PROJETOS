@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/sectionUsuario.css">
+    <link rel="stylesheet" href="assets/css/sectionMenu.css">
+    <link rel="stylesheet" href="assets/css/sectionPedidos.css">
+</head>
+<body>
+    <section class="app">
+        
+        <section class="usuario">
+            <img src="assets/img/loog-açai.jpg" alt="logo-sistema" class="logo"> <br>
+            <label for="">Usuário:</label>
+            <label for="">Guilherme</label> <br>
+            <label for="">Turno:</label>
+            <label for="">2</label> <br>
+
+            <button class="btnUsuario">Fechamento de Turno</button>
+            <button class="btnUsuario">Total Caixa</button>
+            <button class="btnUsuario">Consultar Cliente</button>
+            <button class="btnUsuario">Alterar Valores</button>
+            <button class="btnUsuario">Cadastrar Produto</button>
+            <button class="btnUsuario">Configurações</button>
+        </section>
+
+
+        <section class="menu">
+            <h3> Menu</h3>
+            <label for="">Mesa:</label>
+            <select class="mesa">
+                <option value="Escolha">Escolha</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select> <br>
+
+            <label for="">Copo:</label>
+            <select class="tamanho">
+                <option value="Escolha">Escolha</option>
+                <option value="100ml">100ml</option>
+                <option value="200ml">200ml</option>
+                <option value="300ml">300ml</option>
+                <option value="400ml">400ml</option>
+                <option value="500ml">500ml</option>
+                <option value="600ml">600ml</option>
+                <option value="700ml">700ml</option>
+                <option value="800ml">800ml</option>
+                <option value="900ml">900ml</option>
+                <option value="1LT">1LT</option>
+            </select> <br>
+
+            <label for="">Adds:</label>
+            <select class="sabor">
+                <option value="Abacaxi">Abacaxi</option>
+                <option value="Banana">Banana</option>
+                <option value="Chocolate Branco">Chocolate Branco</option>
+                <option value="Nutella">Nutella</option>
+                <option value="Leite Ninho">Leite ninho</option>
+                <option value="Morango">Morango</option>
+                    
+            </select> <br>
+
+            
+        <button class="enviar">Enviar Pedido</button>
+        </section>
+        
+        <section class="pedidos">
+
+            <div>
+                <h3>Pedidos</h3>
+                <ul class="registroPedidos"></ul>
+            </div>
+
+        </section>
+    </section>
+    <script src="assets/js/manu.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ const opçãoMesa = document.querySelector('.mesa')
 const opçãoTamanho = document.querySelector('.tamanho')
 const opçãoSabor = document.querySelector('.sabor')
 const botaoEnviar = document.querySelector('.enviar')
-const registroDePedidos = document.querySelector('.registroPedidos')
+const registro = document.querySelector('.registroPedidos')
 
 botaoEnviar.addEventListener('click', function(){
     criarPedido()})
@@ -23,7 +23,7 @@ function criarLi(){
 function criarPedido(){
     const li = criarLi()
     li.innerText = concatenarPedido()
-    registroDePedidos.appendChild(li)
+    registro.appendChild(li)
     criarBotaoApagar(li)
     salvarPedido()}
     
@@ -41,23 +41,23 @@ function criarBotaoApagar(li){
     li.appendChild(botaoApagar)}
 
 function salvarPedido(){
-    const liPedidos = registroDePedidos.querySelectorAll('li')
+    const liPedidos = registro.querySelectorAll('li')
     const listaDePedidos = []
 
     for (let pedido of liPedidos){
-        let pedidoTexto = registroDePedidos.innerText
+        let pedidoTexto = registro.innerText
         pedidoTexto = pedidoTexto.replace('Apagar', '').trim()
         listaDePedidos.push(pedidoTexto)}
 
     const pedidoJSON = JSON.stringify(listaDePedidos)
-    localStorage.setItem('registroDePedidos', pedidoJSON)}
+    localStorage.setItem('registro', pedidoJSON)}
 
 function adicionaPedidoSalvos(){
-    const registroDePedidos = localStorage.getItem('registroDePedidos')
-    const listaDePedidos = JSON.parse(registroDePedidos)
+    const registro = localStorage.getItem('registro')
+    const listaDePedidos = JSON.parse(registro)
 
-    for (let registroDePedidos of listaDePedidos){
-        criarPedido(registroDePedidos)
+    for (let registro of listaDePedidos){
+        criarPedido(registro)
     }}
     
 adicionaPedidoSalvos()
